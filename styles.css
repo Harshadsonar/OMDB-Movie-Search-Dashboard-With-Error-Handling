@@ -67,7 +67,7 @@ input {
     border-radius: 50%;
     border: 5px solid #f3f3f3;
     border-top: 5px solid #2f80ed;
-    animation: ayush 2s linear infinite;
+    animation: spin 1s linear infinite;
     display: none;
 }
 
@@ -81,7 +81,7 @@ input {
     font-weight: 800;
 }
 
-@keyframes ayush {
+@keyframes spin {
     0% {
         transform: rotate(0deg);
     }
@@ -106,7 +106,6 @@ input {
     flex-direction: column;
     align-items: center;
     margin-inline: auto;
-    /* border: 1px solid blue; */
 }
 
 #cardimg {
