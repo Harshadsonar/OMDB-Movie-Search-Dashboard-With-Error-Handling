@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+body {
+    background: #242a32;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    margin-inline: auto;
+}
+
+#header {
+    color: #0296e5;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#search-btn {
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    border: none;
+    width: 200px;
+    background-color: #0296e5;
+}
+
+input {
+    width: 90vw;
+    border-radius: 8px;
+    background: #3a3f47;
+    height: 51px;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+.loader-section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    /* background-color: aqua; */
+    border-radius: 50%;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #2f80ed;
+    animation: ayush 2s linear infinite;
+    display: none;
+}
+
+#error-message {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    color: red;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 800;
+}
+
+@keyframes ayush {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+    margin-inline: auto;
+}
+
+.card {
+    width: 250px;
+    min-height: 350px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    /* border: 1px solid blue; */
+}
+
+#cardimg {
+    border-radius: 10px;
+    height: 250px;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: baseline;
+    width: 100%;
+}
+
+.row-1>h1 {
+    color: #242a32;
+    text-align: center;
+    text-shadow: 0px 0px 4px #0296e5;
+    font-family: Montserrat;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: -300px;
+    height: 10px;
+}
+
+.row-1>h2 {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.row-2 {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
