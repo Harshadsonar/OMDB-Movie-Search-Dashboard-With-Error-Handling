@@ -8,6 +8,7 @@ function searchMovies() {
         showError("Both fields are required!");
         return;
     }
+    
     const url = `https://www.omdbapi.com/?s=${movieTitle}&apikey=${apiKey}`;
     document.getElementById("loader").style.display = "block";
     fetch(url)
@@ -30,16 +31,8 @@ function showError(message) {
 }
 
 const btn = document.getElementById("search-btn");
-
 btn.addEventListener("click", searchMovies);
 
-// document.addEventListener('keydown',function(e){
-//     if(e.key==="Enter"){
-//         console.log("function called");
-//         searchMovies;
-//     }
-// })
-//  ddd876f
 
 function displayResults(movies) {
     const resultsDiv = document.getElementById("results");
